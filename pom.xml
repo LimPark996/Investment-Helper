@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>pilates_helper</artifactId>
+    <artifactId>investment-guides</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>pilates_helper</name>
+    <name>investment-guides</name>
     <packaging>war</packaging>
 
     <properties>
@@ -50,6 +50,7 @@
     </dependencies>
 
     <build>
+        <finalName>ROOT</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
