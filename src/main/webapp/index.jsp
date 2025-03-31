@@ -18,6 +18,8 @@
         filteredFAQs = new ArrayList<>(faqs);
     }
 
+    session.setAttribute("filteredFAQs", filteredFAQs);
+
     Random rand = new Random();
     Collections.shuffle(filteredFAQs, rand);
     int maxDisplay = Math.min(3, filteredFAQs.size());
@@ -69,18 +71,6 @@
                 <div class="mb-3">
                     <input type="text" class="form-control" id="questionInput" name="question"
                            placeholder="예: 미국 ETF 초보자에게 추천할 상품은?" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="jobRole">관심 분야 선택:</label>
-                    <select class="form-select" id="jobRole" name="jobRole">
-                        <option value="ALL" selected>모든 분야</option>
-                        <option value="Growth Investor">성장주 투자자</option>
-                        <option value="Dividend Investor">배당주 투자자</option>
-                        <option value="ETF Trader">ETF 투자자</option>
-                        <option value="Tech Analyst">기술 분석가</option>
-                        <option value="Fundamental Analyst">기초 분석가</option>
-                    </select>
                 </div>
 
                 <div class="mb-3">

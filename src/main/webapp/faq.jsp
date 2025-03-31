@@ -2,7 +2,7 @@
 <%@ page import="java.util.List, org.example.investment_guides.model.FAQ" %>
 <%
     // 📌 애플리케이션 스코프에서 FAQ 리스트 가져오기
-    List<FAQ> faqs = (List<FAQ>) application.getAttribute("faqs");
+    List<FAQ> faqs = (List<FAQ>) session.getAttribute("filteredFAQs");
 
     // 📌 요청된 질문 ID 가져오기 (예외 처리 포함)
     String idParam = request.getParameter("id");
